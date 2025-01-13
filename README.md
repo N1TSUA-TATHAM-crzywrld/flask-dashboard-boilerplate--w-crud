@@ -1,6 +1,6 @@
 # flask-dashboard-boilerplate--w-crud
 ## --A Basic Flask Employee Dashboard-- 
-### **Feel free to tinker, improve, and adapt it for your own needs. No doubt could be improved upon, feel free ;) .**
+### **Feel free to tinker, improve, and adapt it for your own needs. No doubt could be improved upon, so.... feel free ;) .**
 This repository is designed as a template or starting point for any project that requires a straightforward employee (or general data) management system.
 Contains a beginner-friendly Flask project for managing employee records (add, edit, delete) with SQL for data storage and some JavaScript charts for simple analytics.
 
