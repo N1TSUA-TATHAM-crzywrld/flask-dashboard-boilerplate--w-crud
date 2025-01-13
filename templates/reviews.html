@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Admin Dashboard" />
+    <meta name="author" content="Austin Tatham" />
+    <title>Enhanced Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: Verdana, Segoe UI, Tahoma, Geneva, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #060606;
+            color: #fff;
+            padding: 18px;
+            top: 8px;
+            left: 16px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 18px;
+        }
+
+        .navbar a:hover {
+            color: #f7f7f7;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -200px;
+            height: 100vh;
+            width: 180px;
+            background-color: #343a40;
+            padding-top: 90px;
+            color: #fff;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .sidebar .nav-link {
+            color: #ddd;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+
+        .content-wrapper {
+            margin-left: 0;
+            padding: 15px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar-toggle-btn {
+            background-color: #060606;
+            color: #fff;
+            border: none;
+            width: 3%;
+            font-size: 19px;
+            padding: 6px;
+            cursor: pointer;
+        }
+
+        .sidebar-toggle-btn:hover {
+            background-color: #252525;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .card-header {
+            background-color: #292b2c;
+            color: #fff;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .table-striped tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .btn-custom {
+            background-color: #3697ff;
+            color: #fff;
+            border-style: ridge;
+            border-width: 4px;
+            font-size: 16px;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 5px;
+            text-shadow: 1px 1px 1px linen;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        .modal-backdrop {
+            background-color: rgba(0, 0, 0, 0.3) !important;
+        }
+
+        .modal-dialog {
+            max-width: 800px;
+        }
+
+        .stats-card {
+            padding: 13px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+            margin-top: 15px;
+        }
+
+        .stats-card .stat {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .stat-number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .stat-number-loss {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .stat-description {
+            font-size: 16px;
+            color: #888;
+        }
+
+        /* Graph container */
+        .graph-container {
+            margin-top: 15px;
+            max-width: 1800px;
+        }
+
+        @media (max-width: 1700px) {
+            .sidebar {
+                position: absolute;
+                top: 0;
+                left: -200px;
+                z-index: 1;
+            }
+
+            .sidebar-toggle-btn {
+                display: block;
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                z-index: 2;
+            }
+
+            .sidebar.open {
+                left: 0;
+            }
+
+            .content-wrapper {
+                margin-left: 0;
+            }
+
+            .card-body {
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <button aria-label="sidebar" class="sidebar-toggle-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <a href="#" class="navbar-brand"></a>
+    </div>
+    <div class="sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Sentiment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Messages</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <div class="stat">
+                            <div class="stat-number">{{ employee_count
+                                }}</div>
+                            <div class="stat-description">Total
+                                Employees</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <div class="stat">
+                            <div class="stat-number">$43,772</div>
+                            <div class="stat-description">Median
+                                Salary</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <div class="stat">
+                            <div class="stat-number-loss">$120k</div>
+                            <div class="stat-description">Revenue
+                                Leakage(YTD)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-description">New Hires</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <!----<div class="row graph-container">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Morale(simple)</div>
+                        <div class="card-body">
+                            <canvas id="demographicsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="height:max-content;">
+                    <div class="card">
+                        <div class="card-header">Budget Allocation</div>
+                        <div class="card-body">
+                            <canvas id="budgetChart" style="max-width: 800px; min-width: 200px; max-height: 1000px; min-height: 100;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>---->
+        </div>
+    </div>
+    <div class="row graph-container">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">NEGATIVE</div>
+                <div class="card-body" id="cons">
+                    {{ cons }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">POSITIVE</div>
+                <div class="card-body" id="pros">
+                    {{ pros }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.classList.toggle("open");
+        }
+
+        const demographicsChart = new Chart(
+            document.getElementById("demographicsChart"),
+            {
+                type: "pie",
+                data: {
+                    labels: ["Revenue", "Expenses"],
+                    datasets: [
+                        {
+                            data: [60, 40],
+                            backgroundColor: ["#007bff", "#ff6384"],
+                        },
+                    ],
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                },
+            }
+        );
+
+        const labels = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        const data = {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Residential',
+                    data: [50, 55, 60, 70, 75, 65, 68, 72, 80, 82, 90, 95],
+                    borderColor: 'rgb(255, 99, 132)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                },
+                {
+                    label: 'Commercial',
+                    data: [60, 65, 70, 75, 80, 85, 82, 88, 93, 95, 100, 110],
+                    borderColor: 'rgb(54, 162, 235)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                },
+                {
+                    label: 'Infrastructure',
+                    data: [100, 98, 95, 92, 90, 88, 85, 82, 78, 75, 72, 70],
+                    borderColor: 'rgb(75, 192, 192)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                }
+            ]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                aspectRatio: 1,
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Revenue (in thousands(USD)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Month'
+                        }
+                    }
+                }
+            }
+        };
+
+        const constructionChart = new Chart(
+            document.getElementById('budgetChart'),
+            config
+        );
+    </script>
+
+</body>
+</html>

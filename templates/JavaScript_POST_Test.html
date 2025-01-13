@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<title>Send Data</title> 
+
+	<style> 
+		div { 
+			display: flex; 
+			justify-content: center; 
+
+			margin-top: 5%; 
+		} 
+
+		button { 
+			padding: 0.6em 1em; 
+			border: 4px solid #fa725a; 
+			transition: ease-in-out 0.3s; 
+			background-color: transparent; 
+			color: #fa725a; 
+			font-weight: bolder; 
+			font-size: 16px; 
+
+			cursor: pointer; 
+		} 
+
+		button:hover { 
+			transform: scale(1.2) rotate(10deg); 
+			background-color: #fa725a; 
+			color: white; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div> 
+		<button id="send_data">Send Data !</button> 
+	</div> 
+
+	<script> 
+		const send_button = document.getElementById 
+			("remove"); 
+
+
+		function post(path, params, method) { 
+			
+			//Create form 
+			const hidden_form = document.createElement('form'); 
+			
+			// Set method to post by default 
+			hidden_form.method = method || 'post'; 
+			
+			// Set path 
+			hidden_form.action = path; 
+			
+			for (const key in params) { 
+				if (params.hasOwnProperty(key)) { 
+					const hidden_input = document.createElement 
+						('input'); 
+					hidden_input.type = 'hidden'; 
+					hidden_input.name = key; 
+					hidden_input.value = params[key]; 
+
+					hidden_form.appendChild(hidden_input); 
+				} 
+			} 
+
+			document.body.appendChild(hidden_form); 
+			hidden_form.submit(); 
+		} 
+
+		send_button.addEventListener('click', () => { 
+			// Call postData function 
+			post('https://...com/posts', 
+				{ 
+					title: 'fruits', 
+					names: ['Apple', 'Banana', 'Mango'], 
+					basketId: 1 
+			}); 
+		}); 
+	</script> 
+</body> 
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.9.0/js/foundation.min.js"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.9.0/css/foundation.min.css"
+        >
+    </head>
+    <style>/* styles.css */
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .profile-container {
+        background-color: white;
+        padding: 20px;
+        margin: 20px auto;
+        width: 50%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile-info p {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+    
+    button {
+        background-color: #71e0ff;
+        color: #333;
+        padding: 10px 15px;
+        border-style: outset;
+        border-width: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    
+    button:hover {
+        background-color: #2196F3;
+        border-style: inset;
+    }
+    
+    .edit-profile-container {
+        background-color: white;
+        padding: 20px;
+        margin: 20px auto;
+        width: 50%;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    
+    #edit-form label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    #edit-form input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+    }
+    
+    #edit-form button {
+        background-color: #2196F3;
+    }
+    #edit-form button[type="button"] {
+        background-color: #f44336;
+        margin-left: 10px;
+    }
+    </style>
+    <body>
+        <div class="profile-container">
+            <h1>Employee Profile</h1>
+            <div class="profile-info">
+                <p>
+                    <strong>Name:</strong>
+                    <span id="name">John Doe</span>
+                </p>
+                <p>
+                    <strong>Email:</strong>
+                    <span id="email">john.doe@example.com</span>
+                </p>
+                <p>
+                    <strong>Phone:</strong>
+                    <span id="phone">123-456-7890</span>
+                </p>
+                <p>
+                    <strong>Address:</strong>
+                    <span id="address">123 Main St, City, Country</span>
+                </p>
+            </div>
+            <button onclick="editProfile()">Edit Profile</button>
+        </div>
+
+        <div class="edit-profile-container" id="edit-container">
+            <h1>Edit Profile</h1>
+            <form id="edit-form" onsubmit="updateProfile(event)">
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" value="John Doe">
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" value="john.doe@example.com">
+                <label for="edit-phone">Phone:</label>
+                <input type="text" id="edit-phone" value="123-456-7890">
+                <label for="edit-address">Address:</label>
+                <input type="text" id="edit-address" value="123 Main St, City, Country">
+                <button type="submit">Save Changes</button>
+                <button type="button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
