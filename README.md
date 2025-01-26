@@ -1,6 +1,6 @@
 <h1 align="center">Flask Dashboard Boilerplate  
   with  
-  **C**reate.**R**ead.**U**pdate.**D**elete</h1>  
+  **Create.**R**ead.**U**pdate.**D**elete</h1>  
 
 ---  
 
