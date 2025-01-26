@@ -3,7 +3,7 @@
   C.R.U.D </h1>
 
 ---  
-
+![Screenshot of Website / running HTML code given in this repo.](https://github.com/N1TSUA-TATHAM-crzywrld/flask-dashboard-boilerplate--w-crud/blob/main/snapshot_of_site.jpeg)
 ## --A Basic Flask Employee Dashboard-- 
 ### **Feel free to tinker, improve, and adapt it for your own needs. No doubt could be improved upon, so.... feel free ;) .**
 This repository is designed as a template or starting point for any project that requires a straightforward employee (or general data) management system.
