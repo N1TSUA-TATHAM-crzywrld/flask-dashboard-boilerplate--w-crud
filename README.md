@@ -9,10 +9,12 @@
   <img src="https://img.shields.io/github/forks/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Forks">
 </p>
 
-
-<h1 align="center">Flask Dashboard Boilerplate</h1>
- <h1 align="center"> with </h1>  
- <h1 align="center"> C.R.U.D </h1>
+<h1>
+  <div align="center">Flask Dashboard Boilerplate</div>   
+  <div align="center"> with </div>  
+  <div align="center"> C.R.U.D <div>
+    
+  </h1>
 
 ---  
 
