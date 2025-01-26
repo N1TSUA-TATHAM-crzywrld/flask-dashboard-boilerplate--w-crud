@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0-blue.svg" alt="Version 1.0">
+  <img src="https://img.shields.io/badge/Made%20with-Python-success.svg" alt="Made with Python">
+  <img src="https://img.shields.io/badge/Made%20with-HTML-success.svg" alt="Made in HTML">
+  <img src="https://img.shields.io/badge/License-Choose%20a%20license-orange.svg" alt="License">
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" alt="PRs Welcome">
+  <br>
+  <img src="https://img.shields.io/github/stars/your-username/FaultLine?style=social" alt="Stars">
+  <img src="https://img.shields.io/github/forks/your-username/FaultLine?style=social" alt="Forks">
+</p>
+
+
 <h1 align="center">Flask Dashboard Boilerplate  
   with  
   C.R.U.D </h1>
