@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Made%20with-Python-success.svg" alt="Made with Python">
   <img src="https://img.shields.io/badge/Made%20with-HTML-success.svg" alt="Made with HTML">
   <img src="https://img.shields.io/badge/License-Choose%20a%20license-orange.svg" alt="License">
-  <img src="https://img.shields.io/badge/PRs-Welcome-thistle.svg" alt="PRs Welcome">
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" alt="PRs Welcome">
   <br>
   <img src="https://img.shields.io/github/stars/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Stars">
   <img src="https://img.shields.io/github/forks/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Forks">
