@@ -10,7 +10,7 @@
 </p>
 
 <h1>
-  <div align="center">Flask Dashboard</div>   :al
+  <div align="center"> Flask Dashboard </div> 
   <div align="center"> with </div>  
   <div align="center"> C.R.U.D <div>
     
