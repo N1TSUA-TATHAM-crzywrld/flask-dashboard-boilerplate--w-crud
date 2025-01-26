@@ -1,8 +1,15 @@
-# flask-dashboard-boilerplate--w-crud
+<h1 align="center">
+  <div>flask-dashboard-boilerplate</div>
+  <div>w/</div>
+  <div>C.R.U.D</div>
+</h1>
+
+## 📂 Information about the provided **"templates"**  
+- `index.html` is used to create the primary GUI or front-end.
+- The other HTML files _or_ **templates** `profile.html` & `reviews.html` are _not_ required and are not called by the **back-end**
+- The additional HTMl files are there for if someone wants to add additional functionality.
+  - In which case, that someone might make use of those as a starting point, if needed.
 ---
-## --HTML code used for front-end
----
-### **index.html is only the primary file actually used/called on. The other files(_profile.html_, _reviews.html_) are there as a starting point, in case you decide you would like to add more functionality**
 ---
 ### Below<sub>\/\/</sub> you'll find links to relevant documents/resources for some of the included frameworks or tools. It might not contain much, _at the time of reading_... I'm adding more as I find the time to do so.\
 
