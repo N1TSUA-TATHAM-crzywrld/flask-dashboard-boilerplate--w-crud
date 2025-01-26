@@ -1,6 +1,6 @@
-# <h1 align="center">Flask Dashboard Boilerplate  
-# with  
-# C.R.U.D </h1>
+<h1 align="center">Flask Dashboard Boilerplate  
+  with  
+  C.R.U.D </h1>
 
 ---  
 
