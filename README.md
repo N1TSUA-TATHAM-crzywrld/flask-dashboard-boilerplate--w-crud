@@ -15,7 +15,7 @@
   <div align="center"> C.R.U.D <div>
     
   </h1>
-
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 ---  
 
 ![Screenshot of Website / running HTML code given in this repo.](https://github.com/N1TSUA-TATHAM-crzywrld/flask-dashboard-boilerplate--w-crud/blob/main/snapshot_of_site.jpeg)
