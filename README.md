@@ -1,23 +1,20 @@
- 🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0-blue.svg" alt="Version 1.0">
   <img src="https://img.shields.io/badge/Made%20with-Python-gold.svg" alt="Made with Python">
   <img src="https://img.shields.io/badge/Made%20with-HTML-success.svg" alt="Made with HTML">
   <img src="https://img.shields.io/badge/License-Choose%20a%20license-orange.svg" alt="License">
-  <img src="https://img.shields.io/badge/PRs-Welcome-navy.svg" alt="PRs Welcome">                                                        🔶
-  <br>                                                                                                                                   🔶
-  <img src="https://img.shields.io/github/stars/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Stars">                              🔶
-  <img src="https://img.shields.io/github/forks/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Forks">                              🔶
-</p>                                                                                                                                     🔶
-                                                                                                                                         🔶
-<h1>                                                                                                                                     🔶
-  <div align="center"> Flask Dashboard </div>                                                                                            🔶
-  <div align="center"> with </div>                                                                                                       🔶
-  <div align="center"> C.R.U.D <div>                                                                                                     🔶
-                                                                                                                                         🔶
+  <img src="https://img.shields.io/badge/PRs-Welcome-navy.svg" alt="PRs Welcome">                                                        
+  <br>                                                                                                                                   
+  <img src="https://img.shields.io/github/stars/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Stars">                              
+  <img src="https://img.shields.io/github/forks/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Forks">                              
+</p>                                                                                                                                     
+                                                                                                                                         
+<h1>                                                                                                                                     
+  <div align="center"> Flask Dashboard </div>                                                                                            
+  <div align="center"> with </div>                                                                                                       
+  <div align="center"> C.R.U.D <div>                                                                                                     
+                                                                                                                                         
   </h1>
-   🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶
-   🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 ---  
 
 ![Screenshot of Website / running HTML code given in this repo.](https://github.com/N1TSUA-TATHAM-crzywrld/flask-dashboard-boilerplate--w-crud/blob/main/snapshot_of_site.jpeg)
