@@ -36,10 +36,11 @@
 your-flask-app/
 │── app/
 │   ├── static/       # Static files (CSS, JS)
-│   ├── <ins>templates/</ins>   # HTML templates
-|        |----reviews.html
-|        |----profile.html  
-|        |----index.html
+│   ├── templates/  # HTML templates
+        ---reviews.html
+        ---profile.html  
+        ---index.html
+|
 │   ├── main.py       # Flask app entry point
 │── config.py         # App configuration
 │── requirements.txt  # Dependencies
