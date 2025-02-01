@@ -8,7 +8,9 @@
   <img src="https://img.shields.io/github/stars/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Stars">                              
   <img src="https://img.shields.io/github/forks/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Forks">                              
 </p>                                                                                                                                     
-                                                                                                                                         
+    ![Flask](https://img.shields.io/badge/Flask-Python-blue.svg) ![GitHub](https://img.shields.io/github/license/your-repo-name) ![Contributors
+    (https://img.shields.io/github/contributors/your-repo-name)
+                                                                                                                                     
 <h1>                                                                                                                                     
   <div align="center"> Flask Dashboard </div>                                                                                            
   <div align="center"> with </div>                                                                                                       
