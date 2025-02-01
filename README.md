@@ -31,7 +31,7 @@
   
 -# Contains a beginner-friendly **Flask** 🐍 project for managing employee records (add, edit, delete) with **SQL** for data storage.
   
--# Also uses some _"dummy data"_ :JavaScript charts for visualizing analytics.
+#- Also uses some _"dummy data"_ :JavaScript charts for visualizing analytics.
 ---
 
 - 🗂️ **SQL Integration** – Store and retrieve   employee data via a relational database.  
