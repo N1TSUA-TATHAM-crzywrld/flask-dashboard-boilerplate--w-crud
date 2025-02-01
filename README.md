@@ -21,17 +21,17 @@
 
 ---
 
-### **A Basic Flask Employee Dashboard**  
+# **A Basic Flask Employee Dashboard**  
 
 ---
 
 ## **Feel free to tinker, improve, and adapt it for your own needs. No doubt could be improved upon, so.... feel free** 🙂
 ---
--# This repository is designed as a template or starting point for any project that requires a straightforward employee (**or general data**) management system.
+###- This repository is designed as a template or starting point for any project that requires a straightforward employee (**or general data**) management system.
   
--# Contains a beginner-friendly **Flask** 🐍 project for managing employee records (add, edit, delete) with **SQL** for data storage.
+###- Contains a beginner-friendly **Flask** 🐍 project for managing employee records (add, edit, delete) with **SQL** for data storage.
   
-#- Also uses some _"dummy data"_ :JavaScript charts for visualizing analytics.
+###- Also uses some _"dummy data"_ :JavaScript charts for visualizing analytics.
 ---
 
 - 🗂️ **SQL Integration** – Store and retrieve   employee data via a relational database.  
