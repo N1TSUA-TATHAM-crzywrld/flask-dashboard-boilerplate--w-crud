@@ -36,14 +36,17 @@
 your-flask-app/
 │── app/
 │   ├── static/       # Static files (CSS, JS)
-│   ├── templates/    # HTML templates
-|      |--- .html
-       |--- .html
+│   ├── <ins>templates/</ins>   # HTML templates
+|        |----reviews.html
+|        |----profile.html  
+|        |----index.html
 │   ├── main.py       # Flask app entry point
 │── config.py         # App configuration
 │── requirements.txt  # Dependencies
 │── README.md         # Project documentation
 ```
+
+
 ---
 - 🔥 **Lightweight Flask backend**
 - 🗂️ **SQL Integration** – Store and retrieve  employee data via a relational database.  
