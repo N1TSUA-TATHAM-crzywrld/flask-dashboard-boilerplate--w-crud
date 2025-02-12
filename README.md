@@ -7,6 +7,8 @@
 
 ---  
 
+
+
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0-blue.svg" alt="Version 1.0">
   <img src="https://img.shields.io/badge/Made%20with-Python-gold.svg" alt="Made with Python">
@@ -18,6 +20,8 @@
   <img src="https://img.shields.io/github/stars/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Stars">                              
   <img src="https://img.shields.io/github/forks/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Forks"> 
 </p>                                                                                                                                     
+
+
 
 ---                                                                                                                                 
 
