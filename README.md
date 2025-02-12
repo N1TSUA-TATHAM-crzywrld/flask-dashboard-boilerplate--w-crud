@@ -4,6 +4,7 @@
   <div align="center"> C.R.U.D <div>                                                                                                     
                                                                                                                                          
   </h1>
+
 ---  
 
 <p align="center">
@@ -17,6 +18,7 @@
   <img src="https://img.shields.io/github/stars/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Stars">                              
   <img src="https://img.shields.io/github/forks/N1TSUA-TATHAM-crzywrld/FaultLine?style=social" alt="Forks"> 
 </p>                                                                                                                                     
+
 ---                                                                                                                                 
 
 ![Screenshot of Website / running HTML code given in this repo.](https://github.com/N1TSUA-TATHAM-crzywrld/flask-dashboard-boilerplate--w-crud/blob/main/snapshot_of_site.jpeg)
