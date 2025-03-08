@@ -1,8 +1,7 @@
-<div>
+
   <div align="center" style="font-size: 100px;"> Flask Dashboard </div> 
   <div align="center" style="font-size: 15px;"> with </div>                                                                                                       
   <div align="center" style="font-size: 18px;"> CRUD </div>                                                                                                   
-</div>
 
 ---  
 
