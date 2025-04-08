@@ -35,6 +35,7 @@
 <h1>
   <div align="center"> Basic Flask Employee Dashboard </div>
 </h1>  
+
 ---
 
   ## **Feel free to tinker, improve, and adapt it for your own needs. No doubt could be improved upon, so.... feel free** 🙂
